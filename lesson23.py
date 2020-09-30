@@ -12,14 +12,23 @@ while True:
 
 
 def list_identifier(x):
-    months = ['january', 'february', 'march', 'april', 'may', 'june', 'july',
-              'august', 'september', 'october', 'november', 'december']
-    print(F"Your month name is {months[x-1].capitalize()}")
+    seas = ['winter', 'spring', 'summer', 'autumn']
+    if x in range(1,3) or x == 12:
+        print(f'Your season is {seas[0].capitalize()}')
+    elif x in range(3,6):
+        print(f'Your season is {seas[1].capitalize()}')
+    elif x in range(6, 9):
+        print(f'Your season is {seas[2].capitalize()}')
+    elif x in range(9,12):
+        print(f'Your season is {seas[3].capitalize()}')
+    else:
+        pass
+
 
 def dict_identifier(x):
-    months = {1:'january', 2:'february', 3:'march', 4:'april', 5:'may', 6:'june', 7:'july',
-              8:'august', 9:'september', 10:'october', 11:'november', 12:'december'}
-    print(F"Your month name is {months.get(x).capitalize()}")
+    seas = {1:'winter', 2:'winter', 3:'spring', 4:'spring', 5:'spring', 6:'summer', 7:'summer',
+              8:'summer', 9:'autumn', 10:'autumn', 11:'autumn', 12:'winter'}
+    print(F"Your season is {seas.get(x).capitalize()}")
 
 
 list_identifier(a)
