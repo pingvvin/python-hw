@@ -1,0 +1,4 @@
+Johnson 30000
+Peterson 20000
+Gunnarson 15000
+Elfdottir 23450
